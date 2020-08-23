@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Joe's Vidya Survey!</title>
+    <link rel="stylesheet" href="survey form.css" />
+  </head>
+  <body>
+    <h1 id="title">
+      Big Joe Presents: The Ultimate Video Game Survey!
+    </h1>
+    <h2 id="description">
+      This survey is here to help you - the ultimate gamer, figure out just
+      which video game is the ideal choice for you!
+    </h2>
+    <form action="form results.html" method="GET">
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="John Doe"
+          required
+        />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </div>
+      <div>
+        <label for="age">age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="200"
+          placeholder="16"
+        />
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" min="1900-01-01" />
+      </div>
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <h3>What Console(s) Do You Own?</h3>
+        <div>
+          <label for="console">Sony Playstation 2</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Sony Playstation 2"
+          />
+        </div>
+        <div>
+          <label for="console">Nintendo GameCube</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Nintendo GameCube"
+          />
+        </div>
+
+        <div>
+          <label for="console">Microsoft Xbox</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Microsoft Xbox"
+          />
+        </div>
+        <div>
+          <label for="console">Nintendo GameBoy Advance</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Nintendo GameBoy Advance"
+          />
+        </div>
+        <div>
+          <label for="console">Nintendo 64</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="intendo 64"
+          />
+        </div>
+        <div>
+          <label for="console">Sony Playstation 1</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Sony Playstation 1"
+          />
+        </div>
+        <div>
+          <label for="console">Sega Dreamcast</label>
+          <input
+            type="checkbox"
+            name="console"
+            id="console"
+            value="Sega Dreamcast"
+          />
+        </div>
+        <div>
+          <label for="console">Other</label>
+          <input type="checkbox" name="console" id="console" value="Other" />
+        </div>
+      </div>
+      <div>
+        <h4>What's Your Favorite Game Genre?</h4>
+        <label for="gameGenre">Genre</label>
+        <select name="gameGenre" id="gameGenre">
+          <option value="Action">Action</option>
+          <option value="Roleplaying">Roleplaying</option
+          ><option value="JRPG">JRPG</option>
+          <option value="Shooter">Shooter</option>
+          <option value="Puzzle">Puzzle</option>
+          <option value="Strategy">Strategy</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+      <div>
+        <h4>Tell us In Detail, What is your favorite game and why?</h4>
+        <label for="gameComment"></label>
+        <textarea
+          name="gameComment"
+          id="gameComment"
+          cols="60"
+          rows="20"
+          placeholder="Tell us what is your favorite game and why!"
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>
